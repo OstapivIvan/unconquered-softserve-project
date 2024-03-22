@@ -1,4 +1,4 @@
-package com.example.test
+package com.notify.notify
 
 import android.app.AppOpsManager
 import android.content.Context
