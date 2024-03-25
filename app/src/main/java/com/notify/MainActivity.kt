@@ -1,13 +1,11 @@
-package com.example.test
+package com.notify
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.example.test.databinding.ActivityMainBinding
+import com.notify.R
+import com.notify.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -18,8 +16,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        val permissionHelper = UsageStatsPermissionHelper(this)
+        if (!permissionHelper.hasUsageStatsPermission()) {
+            permissionHelper.requestUsageStatsPermission()
+        }
         MAIN = this
-
 
     }
 }

@@ -1,3 +1,3 @@
-package com.example.test
+package com.notify
 
 lateinit var MAIN: MainActivity
