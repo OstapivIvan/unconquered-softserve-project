@@ -1,10 +1,11 @@
-package com.notify.notify
+package com.notify
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.notify.notify.databinding.ActivityMainBinding
+import com.notify.R
+import com.notify.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding

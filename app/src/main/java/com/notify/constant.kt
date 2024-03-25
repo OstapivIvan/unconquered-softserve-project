@@ -1,3 +1,3 @@
-package com.notify.notify
+package com.notify
 
 lateinit var MAIN: MainActivity

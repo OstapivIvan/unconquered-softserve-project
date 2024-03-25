@@ -1,4 +1,4 @@
-package com.notify.notify
+package com.notify
 
 import org.junit.Test
 

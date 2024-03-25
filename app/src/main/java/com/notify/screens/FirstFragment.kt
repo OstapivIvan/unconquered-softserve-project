@@ -1,13 +1,13 @@
-package com.notify.notify.screens
+package com.notify.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.notify.notify.MAIN
-import com.notify.notify.R
-import com.notify.notify.databinding.FragmentFirstBinding
+import com.notify.MAIN
+import com.notify.R
+import com.notify.databinding.FragmentFirstBinding
 
 
 class FirstFragment : Fragment() {
